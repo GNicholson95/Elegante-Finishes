@@ -155,6 +155,7 @@ body{
   background-size: cover;
 }
 
+
 .carousel-item:after {
   content:"";
   display:block;
@@ -285,24 +286,24 @@ body{
 
 
 
-    /* ---------- venetian page ---------- */
+   /* ---------- venetian page ---------- */
 
-    .venetian-content-img{
-         max-width: 60%;
+   .venetian-content-img{
+    max-width: 60%;
 
-    }
+}
 
-    /* ---------- venetian page ---------- */
-
-
+/* ---------- venetian page ---------- */
 
 
-    /* ---------- micro cement page ---------- */
 
-    .micro-content-img{
-      max-width: 60%;
 
- }
+/* ---------- micro cement page ---------- */
+
+.micro-content-img{
+ max-width: 60%;
+
+}
 
 
     /* ---------- micro cement page ---------- */
