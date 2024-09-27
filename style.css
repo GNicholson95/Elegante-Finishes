@@ -10,11 +10,16 @@ body{
     background-color:  #fff;
     
 }
+.top-page{
+  display: flex;
+  flex-direction: column;
+}
 
    /* nav section */
 
     nav{
     /* mix-blend-mode: difference; */
+    background-color: transparent;
    }
     
   .container{
@@ -22,7 +27,7 @@ body{
   }
 
   #logo{
-    width: 25%;
+    width: 15%;
     height: auto;
   }
 
@@ -146,10 +151,13 @@ body{
 
 /* carousel */
 
+
 .carousel-item {
+  position: relative;
   width: 100vw;
+  height: 35vh;
   background: no-repeat center center scroll;
-  background-size: cover;
+  background-size: contain; 
 }
 
 
@@ -181,7 +189,6 @@ body{
   font-size: 18px;
   line-height: 1.9;
 }
-
 
 /* carousel */
 
