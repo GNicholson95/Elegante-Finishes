@@ -18,9 +18,9 @@ body{
    /* nav section */
 
     nav{
-    /* mix-blend-mode: difference; */
     background-color: transparent;
    }
+
     
   .container{
    color: #fff;
@@ -54,12 +54,13 @@ body{
   }
 
   .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: rgb(211, 211, 211);
+    color: rgb(226, 226, 226);
     text-decoration:underline ;
   } 
   
   .navbar-light .navbar-nav .nav-link {
     color: #fff;
+    text-shadow: rgb(173, 173, 173) 1px 0 4px;
     font-size: 1.2rem;
   }
   
@@ -99,7 +100,7 @@ body{
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    background-color: whitesmoke;
     mix-blend-mode: difference;
     border-radius: 1px;
     opacity: 1;
@@ -153,7 +154,7 @@ body{
 
 
 .carousel-item {
-  position: relative;
+  position:relative;
   width: 100vw;
   height: 35vh;
   background: no-repeat center center scroll;
@@ -193,15 +194,24 @@ body{
 /* carousel */
 
 /* why us*/
-#why-us{
+#why-us {
+  padding: 5rem 6rem;
+  color: #3b3b3b;
   background-color: rgb(233, 233, 233);
-  padding: 4rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+  url(./assets/concrete-banner.jpg);
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
 }
+
 /* why us */
 
 
 /* about */
-
+#about{
+  padding: 5rem 6rem;
+}
 
 .d-grid {
   display: grid;
@@ -278,13 +288,62 @@ body{
 
   /* venetian */
 
- 
+  #why-us-v{
+    color: #3b3b3b;
+    background-color: rgb(233, 233, 233);
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url(./assets/concrete-banner.jpg);
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
  
     /* venetian */
 
+    /* microcememts */
+
+    #why-us-m{
+      color: #3b3b3b;
+      background-color: rgb(233, 233, 233);
+      background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+      url(./assets/concrete-banner.jpg);
+      background-size: cover; /* Ensures the image covers the entire section */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+    }
+   
+      /* microcememts */
+
+    .subheader{
+      display: none;
+    }
+
     @media only screen and (min-width: 1251px) {
-      .carousel-item {
+      .carousel-inner{
         height: 100vh;
+        width: 100%;
+      }
+      .carousel-item {
+        height: 100%;
+        width: auto;
+      } 
+      .subheader {
+        display: block;
+        position: relative;
+        margin-left: 60px;
+        letter-spacing: 1.5px;
+      }
+      
+      .subheader::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%; 
+        width: 50px; 
+        height: 1px; 
+        background-color: #c6c6c6; 
+        transform: translateY(-50%); 
+        transform: translateX(-120%);
       }
     }
 
@@ -310,5 +369,8 @@ body{
 }
 
 
+
+
     /* ---------- micro cement page ---------- */
     
+   
