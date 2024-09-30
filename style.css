@@ -8,7 +8,6 @@ body{
     margin: 0;
     min-height: 100vh;
     background-color:  #fff;
-    
 }
 .top-page{
   display: flex;
@@ -152,43 +151,25 @@ body{
 
 /* carousel */
 
+#carouselExampleFade {
+  height: 100vh; /* Full viewport height */
+  width: calc(100vw - var(--scrollbar-width));  /* Full viewport width minus scrollbar width */
+  overflow: hidden; /* Ensures no extra scrollbars appear */
+}
+
+.carousel-inner {
+  height: 100%; /* Full height for the inner carousel */
+}
 
 .carousel-item {
-  position:relative;
-  width: 100vw;
-  height: 35vh;
-  background: no-repeat center center scroll;
-  background-size: contain; 
+  height: 100%; /* Full height for each carousel item */
 }
 
-
-.carousel-item:after {
-  content:"";
-  display:block;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background:rgba(0,0,0,0.1)
-}
-
-.carousel-caption {
-  bottom: 270px;
-}
-
-.carousel-caption h5 {
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 25px;
-}
-
-.carousel-caption p {
-  width: 75%;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.9;
+.carousel-item img {
+  /* Ensure the image covers the entire screen while maintaining aspect ratio */
+  object-fit: cover; /* Fills the container without distortion */
+  width: 100%;       /* Makes sure the image spans the full width */
+  height: 100%;      /* Ensures the image spans the full height */
 }
 
 /* carousel */
@@ -319,14 +300,15 @@ body{
     }
 
     @media only screen and (min-width: 1251px) {
-      .carousel-inner{
+      /* .carousel-inner{
         height: 100vh;
         width: 100%;
-      }
-      .carousel-item {
+      } */
+       
+      /* .carousel-item {
         height: 100%;
         width: auto;
-      } 
+      }   */
       .subheader {
         display: block;
         position: relative;
