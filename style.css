@@ -152,31 +152,31 @@ body{
 /* carousel */
 
 #carouselExampleFade {
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   width: calc(100vw - var(--scrollbar-width));  /* Full viewport width minus scrollbar width */
   overflow: hidden; /* Ensures no extra scrollbars appear */
 }
 
 .carousel-inner {
-  height: 100%; /* Full height for the inner carousel */
+  height: 100%; 
 }
 
 .carousel-item {
-  height: 100%; /* Full height for each carousel item */
+  height: 100%; 
 }
 
 .carousel-item img {
   /* Ensure the image covers the entire screen while maintaining aspect ratio */
-  object-fit: cover; /* Fills the container without distortion */
-  width: 100%;       /* Makes sure the image spans the full width */
-  height: 100%;      /* Ensures the image spans the full height */
+  object-fit: cover; 
+  width: 100%;       
+  height: 100%;      
 }
 
 /* carousel */
 
 /* why us*/
 #why-us {
-  padding: 5rem 6rem;
+  padding: 5rem 0rem; /* mobile viewport */
   color: #3b3b3b;
   background-color: rgb(233, 233, 233);
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
@@ -191,7 +191,7 @@ body{
 
 /* about */
 #about{
-  padding: 5rem 6rem;
+  padding: 5rem 0rem; /* mobile viewport */
 }
 
 .d-grid {
@@ -299,16 +299,28 @@ body{
       display: none;
     }
 
+    @media (max-width: 768px) {
+      #logo{
+        width: 8rem;
+        height: auto;
+      }
+
+      #carouselExampleFade .carousel-inner .carousel-item:not(.active) {
+        display: none; /* Only show the first image */
+        pointer-events: none; /* Optional: disable sliding behavior on mobile */
+      }
+    }
+
     @media only screen and (min-width: 1251px) {
-      /* .carousel-inner{
-        height: 100vh;
-        width: 100%;
-      } */
-       
-      /* .carousel-item {
-        height: 100%;
-        width: auto;
-      }   */
+      #about{
+        padding: 5rem 6rem;
+      }
+
+      #why-us {
+        padding: 5rem 6rem;
+        color: #3b3b3b;
+      }
+  
       .subheader {
         display: block;
         position: relative;
