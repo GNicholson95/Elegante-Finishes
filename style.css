@@ -58,13 +58,14 @@ body{
   } 
   
   .navbar-light .navbar-nav .nav-link {
-    color: #fff;
-    text-shadow: rgb(173, 173, 173) 1px 0 4px;
+    color: whitesmoke;
+  
     font-size: 1.2rem;
   }
   
   .nav-link {
     padding: .2rem 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds shadow */
   }
   
   .navbar-nav {
@@ -180,7 +181,7 @@ body{
   color: #3b3b3b;
   background-color: rgb(233, 233, 233);
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-  url(./assets/concrete-banner.jpg);
+  url(./assets/stencil-logo.jpg);
   background-size: cover; /* Ensures the image covers the entire section */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -273,7 +274,7 @@ body{
     color: #3b3b3b;
     background-color: rgb(233, 233, 233);
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-    url(./assets/concrete-banner.jpg);
+    url(./assets/stencil-logo.jpg);
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -287,7 +288,7 @@ body{
       color: #3b3b3b;
       background-color: rgb(233, 233, 233);
       background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-      url(./assets/concrete-banner.jpg);
+      url(./assets/stencil-logo.jpg);
       background-size: cover; /* Ensures the image covers the entire section */
       background-position: center; /* Centers the image */
       background-repeat: no-repeat; /* Prevents the image from repeating */
